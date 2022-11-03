@@ -8,7 +8,7 @@ Template: twentyten
 Tags: black, blue, white, two-columns, fluid, responsive, custom-header, custom-background, theme-options, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
 */
 
-@import url("../twentyten/style.css");
+@import url("../../../themes/twentyten/style.css");
   
 #wrapper,
 #access,

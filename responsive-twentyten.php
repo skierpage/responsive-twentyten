@@ -19,11 +19,10 @@
 
 /*
 Plugin Name: Responsive TwentyTen
-Plugin URI: http://gingerbreaddesign.co.uk/wordpress/responsive-twentyten/
+Plugin URI: https://github.com/skierpage/responsive-twentyten
 Description: Makes your TwentyTen themed site have a responsive and fluid layout. Making it ideal for for viewing across a whole range of devices and screen sizes (i.e iPhones, Android, iPads)
-Author: Todd Halfpenny
-Version: 0.0.4
-Author URI: http://gingerbreaddesign.co.uk/todd
+Author: Todd Halfpenny, skierpage
+Version: 0.0.5
 */
 
 
