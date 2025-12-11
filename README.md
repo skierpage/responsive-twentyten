@@ -41,6 +41,9 @@ The WordPress.org theme repository doesn't support the submission of child theme
 
 ## Changelog
 
+### 0.0.6 alpha
+ * Discourage indexing of date archive pages by adding \<meta name="robots" content="noindex,follow"> tags to them.
+
 ### 0.0.5
 
  * Correct @import of the original twentyten/style.css.

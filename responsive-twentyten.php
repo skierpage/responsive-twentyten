@@ -22,17 +22,24 @@ Plugin Name: Responsive TwentyTen
 Plugin URI: https://github.com/skierpage/responsive-twentyten
 Description: Makes your TwentyTen themed site have a responsive and fluid layout. Making it ideal for for viewing across a whole range of devices and screen sizes (i.e iPhones, Android, iPads)
 Author: Todd Halfpenny, skierpage
-Version: 0.0.5
+Version: 0.0.6 alpha
 */
 
 
 function rtt_add_css_and_js() {
   echo '<link rel="stylesheet" href="' . get_bloginfo('wpurl') .'/wp-content/plugins/responsive-twentyten/css/style.css" media="screen and (min-device-width: 481px)" type="text/css" />
     <link type="text/css" rel="stylesheet" media="only screen and (max-device-width: 480px)" href="' . get_bloginfo('wpurl') .'/wp-content/plugins/responsive-twentyten/css/phone_style.css" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, 
- maximum-scale=1.0">';
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">' . "\n";
 }
 
 add_action('wp_head', 'rtt_add_css_and_js');
+
+function rtt_noindex_date_archives() {
+  if (is_date()) {
+    echo '<meta name="robots" content="noindex,follow">' . "\n";
+  }
+}
+
+add_action('wp_head', 'rtt_noindex_date_archives');
 
 ?>
